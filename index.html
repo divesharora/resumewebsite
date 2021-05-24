@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divesh Arora</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#aboutme">Intro</a>
+      <a href="#work">Work Experience</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+
+    <section id="home" class="intro">
+      <div class="left">
+        <img src="assets/divesh.JPG" alt="Avatar" style="width: 200px" />
+        <div class="flex-center">
+          <a href="https://www.github.com/divesharora"
+            ><i class="fa fa-github fa-3x icon-3d"></i
+          ></a>
+          <a href="whatsapp://send?abid=+918336925462&text=Hello%2C%20Divesh!"
+            ><i class="fa fa-whatsapp fa-3x icon-3d"></i
+          ></a>
+          <a href="mailto:diveshngp@gmail.com"
+            ><i class="fa fa-envelope-o fa-3x icon-3d"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/divesh-arora123"
+            ><i class="fa fa-linkedin fa-3x icon-3d"></i
+          ></a>
+        </div>
+        <form
+          action="https://drive.google.com/file/d/142FoaCBg_aJo7kKHbwodejaGMGe92LS2/view?usp=sharing"
+          method="GET"
+        >
+          <button>Download Resume</button>
+        </form>
+      </div>
+
+      <div class="right">
+        <h1>Hey !</h1>
+        <h1>I'm Divesh Arora.</h1>
+        <p id="p2">Backend Developer</p>
+      </div>
+    </section>
+    <section id="aboutme" class="about">
+      <div class="heading">
+        <h1 style="color: cyan">ABOUT ME</h1>
+      </div>
+      <div style="padding: 2%">
+        <p>
+          I'm an Engineering student at Vellore Institute of Technology,Vellore.
+          I am pursuing my B.Tech in the field of Information Technology.
+        </p>
+        <p>
+          I am a Backend Developer and apart from that I also have worked on
+          varios domains such as Frontend Development, App Development and
+          Comnpetitive Coding.
+        </p>
+        <h1>My tech stack :</h1>
+      </div>
+      <div class="tech">
+        <img src="assets/node.png" alt="" /><img
+          src="assets/mongodb-logo.png"
+          alt=""
+        /><img src="assets/Java-Logo.png" alt="" /><img
+          src="assets/1200px-Typescript.png"
+          alt=""
+        /><img src="assets/c-logo-vector.svg" alt="" />
+      </div>
+    </section>
+    <section id="work" class="workex">
+      <div class="heading">
+        <h1 style="color: cyan">EDUCATION</h1>
+      </div>
+      <div class="cont">
+        <div class="card">
+          <h1>Delhi Public School , Ruby Park</h1>
+          <br />
+          <p>High School</p>
+        </div>
+        <div class="card">
+          <h1>VIT University</h1>
+          <br />
+          <p>B.Tech in Information Technology</p>
+        </div>
+      </div>
+      <div class="heading">
+        <h1 style="color: cyan">WORK EXPERIENCE</h1>
+      </div>
+      <div class="cont">
+        <div class="card">
+          <h1>Apple Developers Group</h1>
+          <br />
+          <p>Core Committe Member</p>
+        </div>
+        <div class="card">
+          <h1>GlobalCert</h1>
+          <br />
+          <p>Backend Development Intern</p>
+        </div>
+        <div class="card">
+          <h1>Plusklass</h1>
+          <br />
+          <p>Backend Development Intern</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="heading">
+        <h1 style="color: cyan">CONTACT ME</h1>
+      </div>
+      <form>
+        <input
+          name="name"
+          type="text"
+          class="feedback-input"
+          placeholder="Name"
+        />
+        <input
+          name="email"
+          type="text"
+          class="feedback-input"
+          placeholder="Email"
+        />
+        <textarea
+          name="text"
+          class="feedback-input"
+          placeholder="Comment"
+        ></textarea>
+        <button>SUBMIT</button>
+      </form>
+    </section>
+  </body>
+</html>
+<script>
+  var arr = [
+    "Backend Developer",
+    "Frontend Developer",
+    "Engineer",
+    "Tech Enthusiast",
+  ];
+  let i = 0;
+  setInterval(function () {
+    document.getElementById("p2").innerHTML = arr[i % 4];
+    i++;
+  }, 2000);
+</script>
